@@ -29,13 +29,3 @@ def proteger():
 if __name__ == '__main__':
     app.run(debug=True)
 
-def proteger():
-    print("📥 Petición recibida en /proteger")
-
-    file = request.files.get('file')
-    if not file:
-        print("⚠️ No se recibió ningún archivo.")
-        return {'error': 'Archivo no recibido'}, 400
-
-    print(f"✔️ Archivo recibido: {file.filename}")
-    ...
