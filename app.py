@@ -28,7 +28,7 @@ def proteger():
 
 if __name__ == '__main__':
     app.run(debug=True)
-@app.route('/proteger', methods=['POST'])
+
 def proteger():
     print("📥 Petición recibida en /proteger")
 
